@@ -2,5 +2,18 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.4"
+  },
+  "packageManager": "npm@10.8.1",
+  "name": "with-vite",
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }
