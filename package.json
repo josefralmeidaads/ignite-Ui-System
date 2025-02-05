@@ -15,5 +15,8 @@
   "name": "with-vite",
   "engines": {
     "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.2"
   }
 }
