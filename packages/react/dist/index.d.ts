@@ -837,7 +837,10 @@ declare const AvatarImage: _stitches_react_types_styled_component.StyledComponen
 
 interface AvatarProps extends ComponentProps$1<typeof AvatarImage> {
 }
-declare const Avatar: (props: AvatarProps) => react_jsx_runtime.JSX.Element;
+declare const Avatar: {
+    (props: AvatarProps): react_jsx_runtime.JSX.Element;
+    displayName: string;
+};
 
 declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
     variant?: "primary" | "secondary" | "tertiary" | undefined;
@@ -1254,7 +1257,10 @@ declare const Input: _stitches_react_types_styled_component.StyledComponent<"inp
 interface TextInputProps extends ComponentProps$1<typeof Input> {
     prefix?: string;
 }
-declare const TextInput: ({ prefix, ...props }: TextInputProps) => react_jsx_runtime.JSX.Element;
+declare const TextInput: {
+    ({ prefix, ...props }: TextInputProps): react_jsx_runtime.JSX.Element;
+    displayName: string;
+};
 
 declare const TextArea: _stitches_react_types_styled_component.StyledComponent<"textarea", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -1666,12 +1672,18 @@ declare const CheckBoxContainer: _stitches_react_types_styled_component.StyledCo
 
 interface CheckBoxProps extends ComponentProps$1<typeof CheckBoxContainer> {
 }
-declare const CheckBox: (props: CheckBoxProps) => react_jsx_runtime.JSX.Element;
+declare const CheckBox: {
+    (props: CheckBoxProps): react_jsx_runtime.JSX.Element;
+    displayName: string;
+};
 
 interface MultiStepProps {
     size: number;
     currentStep?: number;
 }
-declare const MultiStep: ({ size, currentStep }: MultiStepProps) => react_jsx_runtime.JSX.Element;
+declare const MultiStep: {
+    ({ size, currentStep }: MultiStepProps): react_jsx_runtime.JSX.Element;
+    displayName: string;
+};
 
 export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, CheckBox, type CheckBoxProps, Heading, type HeadingProps, MultiStep, type MultiStepProps, Text, TextArea, type TextAreaProps, TextInput, type TextInputProps, type TextProps };

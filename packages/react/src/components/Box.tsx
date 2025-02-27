@@ -13,3 +13,5 @@ export interface BoxProps extends ComponentProps<typeof Box> {
   as?: ElementType
   children?: ReactNode
 }
+
+Box.displayName = 'Box'
